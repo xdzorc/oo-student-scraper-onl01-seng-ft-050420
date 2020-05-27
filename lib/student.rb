@@ -15,7 +15,7 @@ class Student
 
   def self.create_from_collection(students_array)
     students_array.each do |student|
-      student.delete(:profile_url)
+      # student.delete(:profile_url)
       Student.new(student)
     end
   end
