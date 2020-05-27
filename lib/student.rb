@@ -24,7 +24,8 @@ class Student
     attributes_hash.each do |attribute, value|
       if self.attribute!=nil 
         self.send("#{attribute}=", value)
-  end
+      end
+    end
      self
   def self.all
     @@all
